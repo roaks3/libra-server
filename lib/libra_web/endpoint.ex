@@ -42,5 +42,9 @@ defmodule LibraWeb.Endpoint do
     key: "_libra_key",
     signing_salt: "hngo7G/I"
 
+  plug Corsica,
+    origins: "*",
+    allow_headers: ["content-type"]
+
   plug LibraWeb.Router
 end
