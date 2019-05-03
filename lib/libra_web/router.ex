@@ -10,6 +10,6 @@ defmodule LibraWeb.Router do
 
     resources "/interests", InterestController, only: [:index]
     resources "/interest_groups", InterestGroupController, only: [:index]
-    resources "/interest_events", InterestEventController, only: [:index]
+    resources "/interest_events", InterestEventController, only: [:index, :create]
   end
 end
